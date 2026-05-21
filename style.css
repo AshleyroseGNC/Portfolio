@@ -78,16 +78,10 @@ body{
 }
 
 /* HOME */
-.home{
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 130px 10% 80px;
-
-    gap: 80px;
+.home-img img {
+    width: 350px;
+    display: block;
+    margin: auto;
 }
 
 /* HOME CONTENT */
