@@ -3,202 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Rose — Portfolio</title>
+
+    <title>Ashley Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
- 
-    <!-- NAVBAR -->
+
+    <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo">AR<span class="logo-dot">.</span></a>
+
+        <a href="#" class="logo">Ashley.</a>
+
         <nav class="navbar">
             <a href="#">Home</a>
-            <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="menu-toggle" id="menuToggle">
-            <span></span><span></span><span></span>
-        </div>
+
     </header>
- 
-    <!-- MOBILE NAV OVERLAY -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="#" onclick="closeMobileNav()">Home</a>
-        <a href="#about" onclick="closeMobileNav()">About</a>
-        <a href="#projects" onclick="closeMobileNav()">Projects</a>
-        <a href="#contact" onclick="closeMobileNav()">Contact</a>
-    </div>
- 
-    <!-- HOME SECTION -->
-    <section class="home" id="home">
-        <div class="home-eyebrow">I.T. Student & Designer</div>
- 
-        <h1 class="home-title">
-            Ashley<br>
-            <em>Rose</em>
-        </h1>
- 
-        <div class="home-right">
-            <div class="home-img-wrap">
-                <img src="./ashleyrose.png" alt="Ashley Rose">
-                <div class="img-blob"></div>
-            </div>
- 
-            <p class="home-desc">
-                I create clean and modern website designs that focus on creativity, 
-                user experience, and visual aesthetics. Committed to learning, 
-                improving, and exploring creative projects through design and digital 
-                content creation.
+
+    <!-- HOME -->
+    <section class="home">
+
+        <!-- LEFT -->
+        <div class="home-content">
+
+            <span class="intro">WELCOME TO MY PORTFOLIO</span>
+
+            <h1>Ashley Rose</h1>
+
+            <h3>IT Student</h3>
+
+            <p>
+                I create modern and visually appealing websites
+                with clean layouts and responsive designs.
             </p>
- 
-            <div class="home-actions">
-                <a href="#contact" class="btn-primary">Let's Talk</a>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/ashiiibashie" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/slepy.ali/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/AshleyroseGNC" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.wattpad.com/user/ALI4VIBES" target="_blank" rel="noopener noreferrer" aria-label="Wattpad"><i class="fa-brands fa-wattpad"></i></a>
-                </div>
+
+            <!-- BUTTONS -->
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn-gold">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn-outline">
+                    Contact Me
+                </a>
+
             </div>
-        </div>
- 
-        <div class="scroll-hint">scroll ↓</div>
-    </section>
- 
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-        <div class="section-label">01 — About</div>
-        <div class="about-inner">
-            <h2 class="section-title">A little<br><em>about me</em></h2>
-            <div class="about-text">
-                <p>
-                    Hi, I'm Ashley Rose — a 3rd year I.T. student passionate about creating clean and functional 
-                    website designs. I build simple websites with modern and visually appealing designs while 
-                    continuously improving my coding and creative skills.
-                </p>
-                <p>
-                    I enjoy exploring new technologies and transforming ideas into engaging digital experiences.
-                    Beyond web design, I also express my creativity through storytelling and content creation 
-                    on Wattpad.
-                </p>
-                <div class="about-tags">
-                    <span>UI/UX Design</span>
-                    <span>Web Development</span>
-                    <span>Figma</span>
-                    <span>Storytelling</span>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-        <div class="section-label">02 — Projects</div>
-        <h2 class="section-title">Selected<br><em>works</em></h2>
- 
-        <div class="project-grid">
- 
-            <div class="project-card project-card--wide">
-                <div class="project-card-num">01</div>
-                <div class="project-card-body">
-                    <h3>Figma Website</h3>
-                    <p>A personal and collaborative group project designed in Figma with modern UI/UX elements.</p>
-                    <div class="project-links">
-                        <a href="https://www.figma.com/design/ShBn12OUozxg0wAleAwww1/CABANILLAS_ASHLEY-ROSE_PRELIM.fig?m=auto&t=AHj69nNyXEXYmaE1-6" target="_blank" rel="noopener noreferrer" class="project-btn">View Project 1 ↗</a>
-                        <a href="https://www.figma.com/design/iGAae65CgcO5Xv7sLyAx9g/GRP-4--Barangay-Online-Request-System?m=auto&t=AHj69nNyXEXYmaE1-6" target="_blank" rel="noopener noreferrer" class="project-btn">View Project 2 ↗</a>
-                    </div>
-                </div>
-                <div class="project-card-tag">Figma</div>
-            </div>
- 
-            <div class="project-card">
-                <div class="project-card-num">02</div>
-                <div class="project-card-body">
-                    <h3>Wattpad Stories</h3>
-                    <p>Creative stories and fictional writing shared with readers around the world on Wattpad.</p>
-                    <div class="project-links">
-                        <a href="https://www.wattpad.com/user/ALI4VIBES" target="_blank" rel="noopener noreferrer" class="project-btn">Read on Wattpad ↗</a>
-                    </div>
-                </div>
-                <div class="project-card-tag">Writing</div>
-            </div>
- 
-            <div class="project-card">
-                <div class="project-card-num">03</div>
-                <div class="project-card-body">
-                    <h3>My Portfolio</h3>
-                    <p>Personal web design portfolio focused on modern, clean, and responsive layouts.</p>
-                    <div class="project-links">
-                        <a href="https://ashleyrosegnc.github.io/My-portfolio/" target="_blank" rel="noopener noreferrer" class="project-btn">View on GitHub ↗</a>
-                    </div>
-                </div>
-                <div class="project-card-tag">Web</div>
-            </div>
- 
-            <div class="project-card">
-                <div class="project-card-num">04</div>
-                <div class="project-card-body">
-                    <h3>Online Request System</h3>
-                    <p>A group project — Barangay Online Request System with a clean and functional design.</p>
-                    <div class="project-links">
-                        <a href="https://group4bors.infinityfree.me/" target="_blank" rel="noopener noreferrer" class="project-btn">Visit Website ↗</a>
-                    </div>
-                </div>
-                <div class="project-card-tag">Web App</div>
-            </div>
- 
-        </div>
-    </section>
- 
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-        <div class="section-label">03 — Contact</div>
-        <div class="contact-inner">
-            <h2 class="section-title">Let's<br><em>connect</em></h2>
-            <p class="contact-sub">Feel free to reach out through any of my social media accounts below!</p>
-            <div class="contact-icons">
-                <a href="https://www.facebook.com/ashiiibashie" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+
+            <!-- SOCIALS -->
+            <div class="social-icons">
+
+                <a href="https://facebook.com" target="_blank">
                     <i class='bx bxl-facebook'></i>
-                    <span>Facebook</span>
                 </a>
-                <a href="https://www.instagram.com/slepy.ali/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                <a href="https://instagram.com" target="_blank">
                     <i class='bx bxl-instagram'></i>
-                    <span>Instagram</span>
                 </a>
-                <a href="https://github.com/AshleyroseGNC" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+
+                <a href="https://github.com" target="_blank">
                     <i class='bx bxl-github'></i>
-                    <span>GitHub</span>
                 </a>
-                <a href="https://www.wattpad.com/user/ALI4VIBES" target="_blank" rel="noopener noreferrer" aria-label="Wattpad">
+
+                <a href="https://wattpad.com" target="_blank">
                     <i class="fa-brands fa-wattpad"></i>
-                    <span>Wattpad</span>
                 </a>
+
             </div>
+
         </div>
-        <div class="contact-footer">© 2025 Ashley Rose Cabanillas</div>
+
+        <!-- RIGHT -->
+        <div class="home-img">
+
+            <div class="image-circle">
+                <img src="./ashleyrose.png" alt="">
+            </div>
+
+        </div>
+
     </section>
- 
-    <script>
-        const toggle = document.getElementById('menuToggle');
-        const nav = document.getElementById('mobileNav');
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('open');
-            toggle.classList.toggle('active');
-        });
-        function closeMobileNav() {
-            nav.classList.remove('open');
-            toggle.classList.remove('active');
-        }
- 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.project-card, .about-inner, .contact-inner').forEach(el => observer.observe(el));
-    </script>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2>MY WORK</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="work-row">
+
+            <div class="work-text">
+                <h3>Portfolio #1</h3>
+
+                <p>
+                    Modern website layout with responsive
+                    and clean user interface.
+                </p>
+            </div>
+
+            <div class="work-img">
+                <img src="./project1.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="work-row reverse">
+
+            <div class="work-text">
+                <h3>Portfolio #2</h3>
+
+                <p>
+                    Creative web design focused on
+                    elegant and modern visuals.
+                </p>
+            </div>
+
+            <div class="work-img">
+                <img src="./project2.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="work-row">
+
+            <div class="work-text">
+                <h3>Portfolio #3</h3>
+
+                <p>
+                    Responsive portfolio design with
+                    modern UI and smooth structure.
+                </p>
+            </div>
+
+            <div class="work-img">
+                <img src="./project3.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+
+        <h2>HOW I HELP</h2>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <h3>Web Design</h3>
+
+                <p>
+                    Creating responsive and modern
+                    website layouts.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h3>UI/UX Design</h3>
+
+                <p>
+                    Designing clean and user-friendly
+                    interfaces.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h3>Creative Content</h3>
+
+                <p>
+                    Storytelling and digital creativity
+                    through online platforms.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <h2>ABOUT ME</h2>
+
+                <p>
+                    Hi, I'm Ashley Rose, a 3rd year IT student
+                    passionate about web design and creativity.
+                    I enjoy building modern websites and learning
+                    new technologies.
+                </p>
+
+            </div>
+
+            <div class="about-img">
+                <img src="./ashleyrose.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>LET'S WORK TOGETHER</h2>
+
+        <p>
+            Feel free to contact me through my social media accounts.
+        </p>
+
+        <a href="#" class="btn-gold">
+            Contact Me
+        </a>
+
+    </section>
+
 </body>
 </html>
- 
